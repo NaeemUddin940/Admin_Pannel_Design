@@ -8,6 +8,7 @@ import NotFound from "./pages/NotFound";
 import Dashboard from "./admin/pages/Dashboard";
 import Users from "./admin/pages/Users";
 import Settings from "./admin/pages/Settings";
+// import AdminPanel from "./admin/pages/AdminPanel";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
             <AdminLayouts />
           </AdminRoute>
         }>
+        {/* <Route path="admin-panel" element={<AdminPanel />} /> */}
         <Route path="dashboard" element={<Dashboard />} />
         <Route path="users" element={<Users />} />
         <Route path="settings" element={<Settings />} />
