@@ -12,7 +12,7 @@ export default function AdminLayouts() {
         <AppSidebar />
 
         {/* Admin main content */}
-        <main className="flex-1 p-6">
+        <main className="flex-1 bg-background">
           <SiteHeader />
           <Outlet /> {/* Admin pages render here */}
         </main>

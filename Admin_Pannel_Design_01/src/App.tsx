@@ -8,7 +8,6 @@ import NotFound from "./pages/NotFound";
 import Dashboard from "./admin/pages/Dashboard";
 import Users from "./admin/pages/Users";
 import Settings from "./admin/pages/Settings";
-// import AdminPanel from "./admin/pages/AdminPanel";
 
 function App() {
   return (
@@ -19,7 +18,6 @@ function App() {
         <Route path="/about" element={<About />} />
       </Route>
 
-      {/* Admin panel (completely isolated layout) */}
       <Route
         path="/admin"
         element={
