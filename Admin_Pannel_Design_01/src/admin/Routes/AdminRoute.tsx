@@ -9,6 +9,7 @@ const isAdmin = () => {
 };
 
 export default function AdminRoute({ children }: AdminRouteProps) {
+  // if(!isAdmin) for without login redirect
   if (isAdmin()) return <Navigate to="/login" replace />; // redirect non-admins
   return <>{children}</>;
 }
